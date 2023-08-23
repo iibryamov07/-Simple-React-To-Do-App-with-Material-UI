@@ -1,0 +1,155 @@
+:root {
+  --primary-bg-color: #B4ADEA;
+  --secondary-bg-color: #59FFA0;
+  --tertiary-bg-color: #FFED65;
+
+  --font-color: #FDFFF7;
+ 
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: var(--tertiary-bg-color);
+}
+
+.main__form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form__input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border-width: 0.1px;
+  margin-right: 5px;
+  border-color: var(--secondary-bg-color);
+  background-color: transparent;
+  outline: none;
+}
+
+.form__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border-width: 0.1px;
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-bg-color);
+  border: none;
+}
+
+.task{
+  border: none;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 5px;
+  background-color: var(--primary-bg-color);
+}
+
+.task__description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-bg-color);
+
+}
+
+.task__buttons{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.buttons__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3px;
+  margin-left: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: var(--secondary-bg-color);
+  border-width: 0px;
+  border-radius: 10px;
+  color: var(--font-color)
+}
+
+.tasks{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul{
+  list-style: none;
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tertiary-bg-color);
+  
+}
+
+.modal-container{
+  width: 500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: transparent;
+  width: 300px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.modal__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.modal__button--submit{
+  background-color: var(--primary-bg-color);
+}
+
+.modal__button--back{
+  background-color: var(--secondary-bg-color);
+}
